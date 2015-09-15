@@ -1,6 +1,5 @@
 function TimerCount() {
     var timers = $(".time-left");
-
     for (var i = 0; i < timers.length; i++) {
         var time = parseInt($(timers[i]).text());
         time--;

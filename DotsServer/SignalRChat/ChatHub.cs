@@ -417,9 +417,7 @@ namespace SignalRChat
 
             if (hasCloseBox.IsClose == false)
             {
-
                 gt.UserInTurn = oponentId;
-
             }
             else
             {
