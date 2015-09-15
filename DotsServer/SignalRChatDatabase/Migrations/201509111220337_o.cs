@@ -1,0 +1,18 @@
+namespace SignalRChatDatabase.Migrations
+{
+    using System;
+    using System.Data.Entity.Migrations;
+    
+    public partial class o : DbMigration
+    {
+        public override void Up()
+        {
+            AddColumn("dbo.GameTables", "Amount", c => c.Decimal(nullable: false, precision: 18, scale: 2));
+        }
+        
+        public override void Down()
+        {
+            DropColumn("dbo.GameTables", "Amount");
+        }
+    }
+}
